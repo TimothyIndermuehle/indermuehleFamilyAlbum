@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indermuehle Family Album</title>
+    <meta name="description" content="indermuehle family photo gallery">
+    <meta name="keywords" content="indermuehle photos">
+    <meta name="author" content="tim indermuehle">
+    <link rel="stylesheet" href="css/stylesheet5-23.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400">
+</head>
+
+<body>
+    <header>
+        <div class="top-container">
+            <div class="spacer"></div>
+            <img class="gear-img" src="photos/background_graphic.png" alt="Geared background image" width="100%" role="img">
+            <h1 class="centered" role="heading">Indermuehle Family Adventures</h1>
+        </div>
+        <div class="header" id="myHeader" role="banner">
+            <nav role="navigation">
+                <ul role="list">
+                    <li><a class="active" href="#home" role="link">Home</a></li>
+                    <li><a href="index-folder/baby-pics.html" role="link">Kid Pics</a></li>
+                    <li><a href="index-folder/family.html" role="link">Family</a></li>
+                    <li><a href="index-folder/fishing.html" role="link">Fishing</a></li>
+                    <li><a href="index-folder/rafting.html" role="link">Rafting</a></li>
+                    <li><a href="index-folder/skiing.html" role="link">Skiing</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main role="main">
+        <article role="article">
+            <section>
+                <div class="flex-container" class="top-half">
+                    <div class="top-half">
+                        <div class="bio-container">
+                            <div id="bio">
+                                <p class="bio">If Minnesota and Wisconsin got married their child would be the Indermuehles of Conover. Built on a foundation of love and respect they consistantly out perform other familys in every category surveyed.</p>
+                                <img class="ribbon" src="photos/blue-ribbon2.png" alt="blue ribbon picture" role="img">
+                                <p id="ribbon">A Cerified Blue Ribbon Family</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="flex-container">
+                    <div class="bot-half">
+                        <div class="hannity">
+                            <img id="hannity" src="photos/sean-hannity.png" alt="Sean Hannity" role="img">
+                            <p><b>Sean Hannity</b><br>FOX News boob says "The Indermuehle's of Conover; They put the <b>M</b> in 'Merican' and both <b>D's</b> in 'Duck Dynasty'. True patriots!"</p>
+                        </div>
+                        <div class="trump">
+                            <img id="trump" src="photos/trump.png" alt="Trump" role="img">
+                            <p><b>Donald Trump</b><br>United States president and serial booty grabber says "That Robin Indermuehle is one hot potato. Burb! I think I just pooped myself"</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer role="contentinfo">
+        <h2 class="contact" role="heading">Contact Me</h2>
+        <div class="flex-container">
+            <div class="footer">
+                <div class="email" role="link">
+                    <a href="mailto:ind7734@gmail.com?subject=feedback">Email me at<br>Ind7734@gmail.com</a>
+                </div>
+                <div class="address">
+                    <address>
+            Tim Indermuehle <br>
+            1464 Elizabeth Street Apt. 4 <br>
+            Denver, CO 80206
+          </address>
+                </div>
+                <div class="phone">
+                    (970) 390-0085
+                </div>
+                <div class="instagram">
+                    <a href="https://www.instagram.com/bad_backcast/" target="_blank"><img src="photos/instagram-logo.png" alt="instagram link" role="link">
+                    <div class="instagram1">Look me up<br>on Instagram</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        window.onscroll = function() {
+            myFunction()
+        };
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,265 @@
+/* color palattes-----------*/
+
+/*  #F79020; orange
+    #003B4C darker aqua green
+    #4A4A4A dark grey
+    #D5D755 limish green
+    rgba(100,34,64,.85) eggplant
+    #722749 lighter eggplant
+    #fff white
+    #41B6C5 light blue (lettering)
+    #BCBCBC light grey (for contrasting dark aqua green on menu bar)
+/* font links */
+
+/*box model fix*/
+
+/*--global----*/
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1 {
+    color: #F79020;
+    font-size: 40px;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 0;
+}
+
+/*head*/
+/* ------CSS for sticky header---*/
+
+.top-container {
+    background-color: #003B4C;
+    padding: 30px;
+    text-align: center;
+}
+
+.header {
+    background: #555;
+    color: #f1f1f;
+    padding: 10px 16px;
+}
+
+.content {
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 102px;
+}
+
+/*---CSS for header text and background image---*/
+
+.gear-img {
+    width: 100%;
+    opacity: .2
+}
+
+.spacer {
+    background-color: #4A4A4A;
+    height: 30px;
+}
+
+/* Container holding the image and the text */
+
+.top-container {
+    color: white;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.centered {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*navigation bar*/
+
+/*------CSS for nav bar--------*/
+
+ul {
+    background-color: rgba(100, 34, 64, .85);
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+li {
+    float: left;
+
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    color: #41B6C5;
+    display: block;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    padding: 20px 18px;
+    text-decoration: none;
+    text-align: center;
+}
+
+li a:hover:not(.active) {
+    background-color: #722749;
+
+}
+
+.active {
+    background-color: rgba(100, 34, 64, .85);
+
+}
+
+#myHeader {
+    padding: 0;
+}
+
+/*main*/
+
+/*container for body  sections*/
+
+/*--------css top-half-------*/
+
+.top-half {
+    background-image: url('../photos/foxlake.jpg');
+    background-size: cover;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    height: 759px;
+    width: auto;
+}
+
+.bio-container {
+    padding: 50px
+}
+
+.bio {
+    background-color: #D5D755;
+    border-color: rgba(100, 34, 64, .85);
+    border-style: solid;
+    border-width: thin;
+    color: #4A4A4A;
+    display: block;
+    font-size: 2em;
+    height: 350px;
+    line-height: 1.5em;
+    padding: 40px;
+    text-align: center;
+    width: 600px;
+}
+
+#ribbon {
+    background-color: #41B6C5;
+    border-color: rgba(100, 34, 64, .85);
+    border-style: solid;
+    border-width: thin;
+    color: #003B4C;
+    font-size: 2em;
+    text-align: center;
+}
+
+.ribbon {
+    margin-left: 40%;
+
+}
+
+/*css bot-half  */
+
+.bot-half {
+    background-color: #F79020;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0px 0 30px 0;
+    width: auto;
+}
+
+.hannity,
+.trump {
+    border-width: 10px;
+    border-style: solid;
+    border-color: rgba(100, 34, 64, .85);
+    background-color: #BCBCBC;
+    color: #4A4A4A;
+    display: flex;
+    margin: 50px 0 20px 0;
+}
+
+#hannity,
+#trump {
+    border-radius: 20%;
+    padding: 20px;
+}
+
+.hannity p,
+.trump p {
+    line-height: 1.5em;
+    text-align: justify;
+    padding: 0 20px 0 10px;
+    width: 250px;
+}
+
+/*footer*/
+
+/*-----Footer flex box-------*/
+
+.footer {
+    background-color: #BCBCBC;
+    color: #4A4A4A;
+    display: flex;
+    font-size: 1.25em;
+    font-weight: 400;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+
+.footer a {
+    color: #4A4A4A
+}
+
+h2 {
+    background-color: #BCBCBC;
+    color: #4A4A4A;
+    font-size: 2em;
+    margin: 0;
+    padding: 20px 0 0 50px;
+}
+
+footer > div {
+    background-color: #BCBCBC;
+    padding-top: 20px;
+}
+
+footer a:hover {
+    color: #F79020;
+}

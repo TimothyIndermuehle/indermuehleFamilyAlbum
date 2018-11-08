@@ -1,0 +1,127 @@
+/*-----------palatte------------*/
+
+/*  #F79020; orange
+    #003B4C darker aqua green
+    #4A4A4A dark grey
+    #D5D755 limish green
+    rgba(100,34,64,.85) eggplant
+    #722749 lighter eggplant
+    #fff white
+    #41B6C5 light blue (lettering)
+    #BCBCBC light grey (for contrasting dark aqua green on menu bar)*/
+
+/*-------------global----------*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #4A4A4A;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    background-color: #003B4C;
+    font-size: 40px;
+    color: #F79020;
+
+    margin: 0;
+    padding: 75px;
+
+}
+
+
+
+/*-------nav-bar css-----------*/
+
+/* Style the side navigation */
+
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(100, 34, 64, .85);
+    overflow-x: hidden;
+}
+
+
+/* Side navigation links */
+
+.sidenav a {
+    color: #41B6C5;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 1.5em;
+}
+
+/* Change color on hover */
+
+.sidenav a:hover {
+    background-color: #722749;
+    color: #41B6C5;
+}
+
+/* Style the content */
+
+.content {
+    margin-left: 181px;
+    padding-left: 20px;
+}
+
+/*--------main body css-------*/
+
+/*------------gallery---------*/
+
+.row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+
+.column {
+    -ms-flex: 25%;
+    /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+
+/*------------footer css----------*/
